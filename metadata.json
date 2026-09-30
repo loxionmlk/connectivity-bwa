@@ -1,0 +1,70 @@
+{
+  "title": {
+    "en": "Botswana — Connectivity and Population",
+    "fr": "Botswana — Connectivité et population"
+  },
+  "iso3": "BWA",
+  "country": "Botswana",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "reference_period": "2026Q2",
+  "quarters_processed": [
+    "2026Q2",
+    "2026Q1",
+    "2025Q4",
+    "2025Q3"
+  ],
+  "services": [
+    "fixed",
+    "mobile"
+  ],
+  "admin_level": "ADM2",
+  "generated": "2026-09-30T09:39:19",
+  "sources": {
+    "ookla": {
+      "name": "Ookla Speedtest Open Data",
+      "licence": "CC BY-NC-SA 4.0",
+      "url": "https://github.com/teamookla/ookla-open-data",
+      "resolution": "Web Mercator z16 (~611 m at the equator)"
+    },
+    "worldpop": {
+      "name": "WorldPop 2025 1km",
+      "product": "Global 2 R2025A",
+      "release": "R2025A",
+      "is_projection": true,
+      "licence": "CC BY 4.0",
+      "url": "https://www.worldpop.org"
+    },
+    "geoboundaries": {
+      "name": "geoBoundaries gbOpen",
+      "licence": "CC BY 4.0",
+      "url": "https://www.geoboundaries.org"
+    }
+  },
+  "methods": {
+    "weighting": "population-weighted median; cell population shared equally among the tiles whose centroid falls in the cell",
+    "coverage": "share of population in 1 km cells containing >= 1 measured tile",
+    "thresholds_mbps": {
+      "broadband": 10,
+      "high_quality": 25
+    },
+    "settlement_density_thresholds": {
+      "urban": 1500,
+      "periurban": 300
+    }
+  },
+  "headline": {
+    "d_median_pop": 40.84041320960129,
+    "d_median_tile": 35.465,
+    "pct_above_bb": 91.2308077619055,
+    "pct_above_hi": 72.85270100974962,
+    "pop_coverage_pct": 34.232416863978436,
+    "area_coverage_pct": 0.10206328378605226,
+    "lat_median_pop": 35.0
+  },
+  "population_total": 2541648.313739081,
+  "connectivity_gini": 0.48252955390035834,
+  "licence_of_this_product": "CC BY-NC-SA 4.0 (inherited from Ookla, share-alike)"
+}
